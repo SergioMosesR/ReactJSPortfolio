@@ -1,0 +1,102 @@
+#intro {
+    height: calc(100vh - 4rem);
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px); /* Mulai dengan elemen sedikit terdapat di bawah */
+}
+
+/* Animasi dengan transformasi */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#intro {
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+/* Menggunakan latar belakang berubah warna */
+#intro:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.bg {
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+    z-index: -1;
+    object-fit: cover;
+    height: 70vh;
+    border-radius: 50%;
+    width: auto;
+}
+
+.introContent {
+    height: 500px; /* Menghilangkan tinggi tetap untuk responsif */
+    padding: 2rem;
+    font-size: 3rem; /* Mengurangi ukuran font pada layar kecil */
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.hello {
+    font-size: 1.5rem; /* Mengurangi ukuran font pada layar kecil */
+    font-weight: 100;
+}
+
+.introName {
+    color: yellow;
+    margin-left: 5px; /* Menambahkan margin kiri yang lebih besar */
+}
+
+.introPara {
+    font-size: 1rem; /* Mengurangi ukuran font pada layar kecil */
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .bg {
+        display: none; /* Menghilangkan gambar latar belakang pada layar kecil */
+    }
+    
+    .introContent {
+        padding: 1rem; /* Mengurangi padding pada layar kecil */
+        font-size: 1.5rem; /* Mengurangi ukuran font pada layar kecil */
+    }
+    
+    .hello {
+        font-size: 1.25rem; /* Mengurangi ukuran font pada layar kecil */
+    }
+    
+    .introPara {
+        font-size: 0.9rem; /* Mengurangi ukuran font pada layar kecil */
+    }
+}

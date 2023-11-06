@@ -1,0 +1,101 @@
+#works {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Title {
+    font-size: 2rem; /* Mengurangi ukuran font pada layar kecil */
+    font-weight: 600;
+    padding-top: 2rem; /* Mengurangi padding atas */
+    margin-bottom: 1rem; /* Mengurangi margin bawah */
+}
+
+.Container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    margin-bottom: 20px; /* Mengurangi margin bawah */
+}
+
+.Card:hover {
+    transform: scale(1.05);
+}
+
+.Card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s;
+    text-decoration: none;
+    color: white;
+}
+
+.Card:hover a {
+    opacity: 1;
+}
+
+.Card a button {
+    background: #007bff;
+    color: white;
+    padding: 8px 16px; /* Mengurangi padding tombol */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Card a button:hover {
+    background: #0056b3;
+}
+
+.ComingSoon {
+    text-align: center;
+    color: white;
+    padding: 8px 0; /* Mengurangi padding atas dan bawah */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    margin-top: 10px;
+    transition: opacity 0.2s;
+}
+
+.ComingSoon:hover {
+    opacity: 0;
+}
+
+@media (min-width: 768px) {
+    .Title {
+        font-size: 3rem; /* Kembalikan ukuran font pada layar yang lebih besar */
+        padding-top: 3rem; /* Kembalikan padding atas */
+        margin-bottom: 1.5rem; /* Kembalikan margin bawah */
+    }
+    
+    .Card {
+        margin-bottom: 50px; /* Kembalikan margin bawah pada layar yang lebih besar */
+    }
+    
+    .Card a button {
+        padding: 10px 20px; /* Kembalikan padding tombol pada layar yang lebih besar */
+    }
+    
+    .ComingSoon {
+        padding: 10px 0; /* Kembalikan padding pada layar yang lebih besar */
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/SergioMosesR/ReactJSPortfolio.git/static/css/main.17ed5b40.css",
+    "main.js": "/SergioMosesR/ReactJSPortfolio.git/static/js/main.dd04071f.js",
+    "static/media/Ilkoom.png": "/SergioMosesR/ReactJSPortfolio.git/static/media/Ilkoom.ff1b6da199e13868b58c.png",
+    "static/media/Figma.png": "/SergioMosesR/ReactJSPortfolio.git/static/media/Figma.15006fe3a67f58ef97ed.png",
+    "static/media/Expense.png": "/SergioMosesR/ReactJSPortfolio.git/static/media/Expense.5c6cab90b9c603b8862e.png",
+    "static/media/Laravel.png": "/SergioMosesR/ReactJSPortfolio.git/static/media/Laravel.c541d4ee9a0f1796a1df.png",
+    "static/media/GW.jpg": "/SergioMosesR/ReactJSPortfolio.git/static/media/GW.9ee79b4f102e69d8c23e.jpg",
+    "static/media/ToDo.png": "/SergioMosesR/ReactJSPortfolio.git/static/media/ToDo.9f0c975aaf795ea2961a.png",
+    "static/media/Myositos12.png": "/SergioMosesR/ReactJSPortfolio.git/static/media/Myositos12.c73d238bc48b28ad1bcc.png",
+    "static/media/ReactJS.png": "/SergioMosesR/ReactJSPortfolio.git/static/media/ReactJS.8b1911596db2a83c0e94.png",
+    "index.html": "/SergioMosesR/ReactJSPortfolio.git/index.html",
+    "main.17ed5b40.css.map": "/SergioMosesR/ReactJSPortfolio.git/static/css/main.17ed5b40.css.map",
+    "main.dd04071f.js.map": "/SergioMosesR/ReactJSPortfolio.git/static/js/main.dd04071f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17ed5b40.css",
+    "static/js/main.dd04071f.js"
+  ]
+}
